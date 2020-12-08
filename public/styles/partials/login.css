@@ -1,0 +1,44 @@
+.page-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-login .card-login {
+  width: 100vw;
+
+  padding: 2rem;
+
+  max-width: 650px;
+}
+
+.page-login .card-login .form-header {
+  text-align: center;
+  color: var(--color-secondary-light);
+}
+
+.page-login .card-login .form-header i {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.page-login .card-login .form-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.page-login .card-login .input-block + .input-block {
+  margin-top: 2rem;
+}
+
+.page-login .card-login .btn-login {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.page-login .card-login .link-signup {
+  display: block;
+
+  margin-top: 2rem;
+  text-align: center;
+}

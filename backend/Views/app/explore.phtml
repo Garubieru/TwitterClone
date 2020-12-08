@@ -1,0 +1,70 @@
+<div class="page-explore">
+  <aside class='home-aside'>
+    <div class="aside-buttons">
+      <div class="logo">
+        <a class='aside-link' href="/home">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+      <a class='aside-link' href="/home">
+        <i class="fa fa-home"></i>
+        <p class='link-info'>Página inicial</p>
+      </a>
+      <a class='aside-link active' href="/explore">
+        <i class="fa fa-search"></i>
+        <p class='link-info'>Explorar</p>
+      </a>
+      <a class='aside-link' href="/<?= $_SESSION['username'] ?>">
+        <i class="fa fa-user"></i>
+        <p class='link-info'>Perfil</p>
+      </a>
+      <a class='btn btn-primary btn-tweet' href="">
+        <i class="fa fa-share"></i>
+        <p class='link-info'>Tweetar</p>
+      </a>
+    </div>
+    <div class="aside-logout">
+      <a href="/logout" class='btn btn-primary'>Sair</a>
+    </div>
+  </aside>
+
+  <main class='home-timeline'>
+    <h1 class='header-title'>
+      Quem seguir
+    </h1>
+
+    <div class="explore-area">
+      <form action="/explore" method="GET">
+        <div class="search-block">
+          <input type="text" placeholder="Buscar no Twitter" name='search' id='search'>
+          <button type='submit'>Pesquisar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="timeline">
+      <? foreach($this->view->searchedUser as $user) { ?>
+      <div class="tweet-area tweet">
+        <div class="tweet-container">
+          <div class="profile-picture">
+            <img src="/images/default.png" alt="">
+          </div>
+          <div class="tweet-info explore">
+            <div class="tweet-user">
+              <a href='' class='tweet-name'><?= $user->name ?></a>
+              <small class='tweet-username'>@<?= $user->username ?></small>
+            </div>
+            <? if ($user->following == 0)  { ?>
+            <a href="/action?action=follow&id=<?= $user->id ?>" class='btn btn-light follow-btn'>Seguir</a>
+            <? } else { ?>
+            <a href="/action?action=unfollow&id=<?= $user->id ?>" class='btn btn-primary follow-btn'>Seguindo</a>
+            <? } ?>
+          </div>
+        </div>
+      </div>
+      <? } ?>
+
+    </div>
+
+  </main>
+</div>

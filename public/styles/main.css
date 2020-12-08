@@ -1,0 +1,55 @@
+:root {
+  --color-primary: #1da1f2;
+  --color-primary-light: #7bccfe;
+  --color-primary-dark: #1a91da;
+  --color-secondary: #6e767d;
+  --color-secondary-light: #d9d9d9;
+  --color-secondary-dark: #15181c;
+  --color-danger: #dd2e44;
+  --color-dark: #000000;
+  --color-white: #ffffff;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-dark);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Nunito, Segoe UI;
+  color: var(--color-white);
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 62.5%;
+  }
+}

@@ -1,0 +1,175 @@
+.index-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.4rem;
+}
+
+.index-container.main .login-inputs {
+  display: none;
+}
+
+.main-info {
+  color: var(--color-secondary-light);
+  width: 40rem;
+}
+
+.main-info .twitter-logo {
+  margin-bottom: 2rem;
+}
+
+.main-info h1 {
+  font-size: 3.2rem;
+
+  max-width: 40rem;
+}
+
+.main-info p {
+  margin-top: 5rem;
+  font-weight: bold;
+
+  font-size: 1.5rem;
+}
+
+.main-info .main-buttons {
+  margin-top: 1.3rem;
+}
+
+.main-info .main-buttons .btn {
+  width: 100%;
+}
+
+.main-info .main-buttons .btn + .btn {
+  margin-top: 1.2rem;
+}
+
+.index-container.aside {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-primary-light);
+
+  font-weight: bold;
+  font-size: 2rem;
+
+  margin-top: 2rem;
+  padding: 4rem 2rem;
+}
+
+.index-container.aside .twitter-bg {
+  position: absolute;
+  overflow: hidden;
+
+  right: -10vh;
+  top: -5vh;
+
+  z-index: 0;
+}
+
+.index-container.aside .twitter-bg img {
+  width: 55rem;
+}
+
+.index-container.aside .info-container {
+  max-width: 40rem;
+  z-index: 1;
+}
+
+.index-container.aside .info-box {
+  display: flex;
+  align-items: center;
+}
+
+.index-container.aside .info-box i {
+  margin-right: 0.8rem;
+}
+
+.index-container.aside .info-box + .info-box {
+  margin-top: 3rem;
+}
+
+footer {
+  max-width: 70%;
+  margin: 2rem auto;
+}
+
+footer .footer-buttons {
+  display: flex;
+}
+
+.footer-buttons .btn {
+  width: 50%;
+}
+
+.footer-buttons .btn + .btn {
+  margin-left: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  footer {
+    display: none;
+  }
+
+  .page-index {
+    display: flex;
+  }
+
+  .index-container {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .index-container.aside {
+    margin-top: 0;
+    order: 0;
+
+    padding: 1.4rem;
+  }
+
+  .index-container.main {
+    order: 1;
+  }
+
+  .index-container.aside .twitter-bg {
+    right: -40vh;
+    top: -5vh;
+  }
+
+  .index-container.aside .twitter-bg img {
+    width: 130rem;
+  }
+}
+
+@media (min-width: 1001px) {
+  .index-container.main {
+    position: relative;
+  }
+
+  .input-block.index-input {
+    max-width: 20rem;
+  }
+
+  .index-container.main .login-inputs {
+    position: absolute;
+    top: 3vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .autherror {
+    position: absolute;
+    top: 8vh;
+    right: 21vh;
+
+    width: 60%;
+  }
+
+  .index-container.main .login-inputs .input-block + .input-block {
+    margin-left: 1.3rem;
+  }
+
+  .index-container.main .login-inputs .login-button {
+    width: 8rem;
+    margin-left: 1.3rem;
+  }
+}

@@ -1,0 +1,28 @@
+<? $_SESSION['route'] = '/login';?>
+<div class="page-login">
+  <main>
+    <div class="card-login">
+      <div class="form-header">
+        <i class="fa fa-twitter"></i>
+        <h1>Entrar no Twitter</h1>
+      </div>
+      <form action="/auth" method="POST">
+        <div class="input-block">
+          <input type="text" name="user" id="user">
+          <label for="user">E-mail ou nome de usuário</label>
+        </div>
+
+        <div class="input-block">
+          <input type="text" name="password" id="password">
+          <label for="password">Senha</label>
+        </div>
+
+        <? if ($this->view->login === 'error') { ?>
+        <p class='text-warning'>E-mail/Usuário ou senha inválido(s).</p>
+        <? } ?>
+        <button class='btn btn-primary btn-login' type="submit">Entrar</button>
+      </form>
+      <a href="/signup" class='link-primary link-signup'>Inscrever-se no Twitter</a>
+    </div>
+  </main>
+</div>

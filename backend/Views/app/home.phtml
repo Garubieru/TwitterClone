@@ -1,0 +1,75 @@
+<div class="page-home">
+  <aside class='home-aside'>
+    <div class="aside-buttons">
+      <div class="logo">
+        <a class='aside-link' href="/home">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+      <a class='aside-link active' href="/home">
+        <i class="fa fa-home"></i>
+        <p class='link-info'>Página inicial</p>
+      </a>
+      <a class='aside-link' href="/explore">
+        <i class="fa fa-search"></i>
+        <p class='link-info'>Explorar</p>
+      </a>
+      <a class='aside-link' href="/<?= $_SESSION['username'] ?>">
+        <i class="fa fa-user"></i>
+        <p class='link-info'>Perfil</p>
+      </a>
+      <a class='btn btn-primary btn-tweet' href="">
+        <i class="fa fa-share"></i>
+        <p class='link-info'>Tweetar</p>
+      </a>
+    </div>
+    <div class="aside-logout">
+      <a href="/logout" class='btn btn-primary'>Sair</a>
+    </div>
+  </aside>
+
+  <main class='home-timeline'>
+    <h1 class='header-title'>
+      Página inicial
+    </h1>
+
+    <div class="tweet-area">
+      <div class="tweet-container">
+        <div class="profile-picture">
+          <img src="/images/default.png" alt="">
+        </div>
+        <form action="/tweet" method="POST" id='tweet-form'>
+          <textarea name="tweet" id="tweet-text" maxlength="280" placeholder="O que está acontecendo?"></textarea>
+        </form>
+      </div>
+      <button type="submit" form='tweet-form' class='btn btn-primary tweet-button'>Tweetar</button>
+    </div>
+
+    <div class="timeline">
+      <? foreach ($this->view->tweets as $tweet) { ?>
+      <div class="tweet-area tweet">
+        <div class="tweet-container">
+          <div class="profile-picture">
+            <img src="/images/default.png" alt="">
+          </div>
+          <div class="tweet-info">
+            <div class="tweet-user">
+              <a href='/<?= $tweet->username ?>' class='tweet-name'><?= $tweet->name  ?></a>
+              <small class='tweet-username'>@<?= $tweet->username ?> - <?= $tweet->time ?></small>
+            </div>
+            <div class="tweet-message">
+              <p><?= $tweet->tweet ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="tweet-actions">
+          <a href="" class=></a>
+          <i class="fa fa-heart tweet-like"></i>
+        </div>
+      </div>
+      <? }?>
+
+    </div>
+
+  </main>
+</div>

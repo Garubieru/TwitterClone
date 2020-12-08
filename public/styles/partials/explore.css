@@ -1,0 +1,76 @@
+.page-explore .home-timeline {
+  width: initial;
+}
+
+.explore-area {
+  padding: 1.2rem 0.8rem;
+  border-bottom: 1px solid var(--color-secondary-dark);
+}
+
+.tweet-info.explore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-info.explore .tweet-user {
+  display: block;
+}
+
+.tweet-info.explore .tweet-user .tweet-name {
+  margin-left: 0;
+  display: block;
+}
+
+.tweet-info.explore .tweet-user .tweet-name {
+  margin-left: 0;
+  display: block;
+}
+
+.tweet-info.explore .follow-btn {
+  width: 20%;
+}
+
+@media (min-width: 700px) {
+  .page-explore .home-aside {
+    align-items: initial;
+    border: none;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .page-explore .home-timeline {
+    width: 70%;
+    border-right: 1px solid var(--color-secondary-dark);
+    height: 100vh;
+    margin: 0 auto;
+
+    border-left: 1px solid var(--color-secondary-dark);
+  }
+}
+
+@media (min-width: 1284px) {
+  .page-explore .home-aside {
+    align-items: initial;
+
+    margin-left: 5rem;
+  }
+
+  .page-explore .home-timeline {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-explore .home-aside {
+    align-items: initial;
+
+    margin-left: 25rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .page-explore .home-aside {
+    align-items: initial;
+
+    margin-left: 40rem;
+  }
+}

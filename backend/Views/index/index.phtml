@@ -1,0 +1,68 @@
+<? $_SESSION['route'] = '/'; ?>
+
+<div class="page-index">
+  <main class='index-container main'>
+    <form action="/auth" method="POST">
+      <div class="login-inputs">
+        <div class="input-block index-input">
+          <input type="text" name="user" id="user">
+          <label for="user">E-mail ou nome de usuário</label>
+        </div>
+
+        <div class="input-block index-input">
+          <input type="password" name="password" id="password">
+          <label for="password">Senha</label>
+        </div>
+
+        <button type='submit' class='btn btn-light login-button'>Entrar</button>
+        <? if ($this->view->login === 'error') {?>
+        <div>
+          <p class='text-warning autherror'>E-mail/Usuário ou senha inválido(s).</p>
+        </div>
+        <? } ?>
+      </div>
+
+    </form>
+
+    <section class="main-info">
+      <i class="fa fa-twitter fa-3x twitter-logo"></i>
+      <h1>Saiba o que está acontecendo no mundo agora.</h1>
+      <p>Inscreva-se no Twitter hoje mesmo.</p>
+
+      <div class="main-buttons">
+        <a href='/signup' class='btn btn-primary'>Inscrever-se</a>
+        <a href='/login' class="btn btn-light">Entrar</a>
+      </div>
+    </section>
+  </main>
+
+  <aside class='index-container aside'>
+    <div class="twitter-bg">
+      <img src="/images/twitter-logo.png" alt="Twitter Logo">
+    </div>
+
+    <section class="info-container">
+      <div class='info-box'>
+        <i class="fa fa-search"></i>
+        <p>Siga o que for do seu interesse.</p>
+      </div>
+
+      <div class='info-box'>
+        <i class="fa fa-users"></i>
+        <p>Saiba sobre o que as pessoas estão falando.</p>
+      </div>
+
+      <div class='info-box'>
+        <i class="fa fa-comments"></i>
+        <p>Participe da conversa.</p>
+      </div>
+    </section>
+  </aside>
+
+  <footer>
+    <div class="footer-buttons">
+      <a href='/signup' class='btn btn-primary'>Inscrever-se</a>
+      <a href='/login' class="btn btn-light">Entrar</a>
+    </div>
+  </footer>
+</div>

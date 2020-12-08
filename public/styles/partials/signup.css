@@ -1,0 +1,80 @@
+.page-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.card-signup {
+  width: 100vw;
+
+  padding: 2rem;
+
+  margin-top: 5rem;
+}
+
+.page-signup .card-signup .twitter-logo {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 3rem;
+}
+
+.card-signup i,
+.card-signup h1 {
+  color: var(--color-secondary-light);
+}
+
+.card-signup h1 {
+  font-size: 2.8rem;
+
+  margin-bottom: 2rem;
+}
+
+.card-signup .input-block + .input-block {
+  margin-top: 2rem;
+}
+
+.card-signup .info-warning {
+  color: var(--color-secondary-light);
+
+  margin-top: 2rem;
+
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.card-signup .signup-button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 705px) {
+  .page-signup {
+    height: 100vh;
+
+    background-color: rgba(110, 118, 125, 0.4);
+  }
+
+  .card-signup {
+    border-radius: 1.2rem;
+
+    width: 80vh;
+
+    margin: 0;
+
+    background: var(--color-dark);
+
+    padding: 4.5rem 3rem;
+  }
+
+  .page-signup .card-signup .twitter-logo {
+    position: initial;
+    transform: initial;
+    text-align: center;
+  }
+}

@@ -1,0 +1,246 @@
+.page-home {
+  display: flex;
+}
+
+.home-aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-direction: column;
+  padding: 1.2rem 1.2rem;
+
+  border-right: 1px solid var(--color-secondary-dark);
+  color: var(--color-secondary-light);
+  height: 100vh;
+
+  position: fixed;
+}
+
+.home-aside .logo .aside-link {
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.aside-link,
+.btn-tweet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-white);
+
+  font-size: 2.7rem;
+
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+.aside-link:hover {
+  color: var(--color-primary);
+  background: rgba(29, 161, 242, 0.1);
+}
+
+.home-aside .aside-link + .aside-link {
+  margin-top: 3rem;
+}
+
+.btn-tweet {
+  margin-top: 3rem;
+}
+
+.btn-tweet .link-info,
+.aside-link .link-info {
+  display: none;
+}
+
+.home-timeline {
+  margin-left: 7rem;
+  width: 100vw;
+}
+
+.header-title {
+  padding: 1.2rem 2rem;
+
+  border-bottom: 1px solid var(--color-secondary-dark);
+  color: var(--color-secondary-light);
+
+  font-size: 2.2rem;
+}
+
+.tweet-area {
+  border-bottom: 10px solid var(--color-secondary-dark);
+  padding: 0.8rem 1.3rem;
+}
+
+.tweet-container {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-container .profile-picture {
+  margin-right: 1rem;
+}
+
+.tweet-container .profile-picture img {
+  width: 5.5rem;
+  height: 5.5rem;
+
+  border-radius: 50%;
+}
+
+.tweet-container form {
+  height: 6rem;
+  width: 100%;
+}
+
+.tweet-area .tweet-button {
+  width: 9rem;
+
+  margin-left: auto;
+}
+
+.tweet-area.tweet {
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-secondary-dark);
+
+  transition: 0.3s;
+}
+
+.tweet-area.tweet:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tweet-container .tweet-info {
+  width: 100%;
+}
+
+.tweet-container .tweet-info .tweet-user {
+  display: flex;
+}
+
+.tweet-container .tweet-info .tweet-user .tweet-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  margin-right: 0.6rem;
+
+  color: var(--color-white);
+}
+
+.tweet-container .tweet-info .tweet-user .tweet-name:hover {
+  text-decoration: underline;
+}
+
+.tweet-container .tweet-info .tweet-user .tweet-username {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.tweet-container .tweet-info .tweet-message {
+  overflow-wrap: break-word;
+
+  color: var(--color-secondary-light);
+}
+
+.tweet-area .tweet-actions .tweet-like {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+
+  margin-left: auto;
+}
+
+.tweet-area .tweet-actions .tweet-like:hover {
+  color: var(--color-danger);
+  background: rgba(221, 46, 68, 0.3);
+}
+
+@media (min-width: 700px) {
+  .home-aside {
+    align-items: initial;
+    border: none;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .home-timeline {
+    width: 70%;
+    border-right: 1px solid var(--color-secondary-dark);
+    height: 100vh;
+    margin: 0 auto;
+
+    border-left: 1px solid var(--color-secondary-dark);
+  }
+
+  .tweet-area.tweet {
+    border-bottom: 1px solid var(--color-secondary-dark);
+    border-right: 1px solid var(--color-secondary-dark);
+    border-left: 1px solid var(--color-secondary-dark);
+  }
+}
+
+@media (min-width: 1284px) {
+  .home-aside {
+    align-items: initial;
+
+    margin-left: 5rem;
+  }
+
+  .btn-tweet .link-info,
+  .aside-link .link-info {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin-left: 1.2rem;
+  }
+
+  .home-timeline {
+    max-width: 650px;
+  }
+
+  .aside-link,
+  .btn-tweet {
+    border-radius: 2rem;
+    padding: 1.2rem;
+    width: fit-content;
+
+    justify-content: initial;
+  }
+  .btn-tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-tweet i {
+    display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-aside {
+    align-items: initial;
+
+    margin-left: 25rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home-aside {
+    align-items: initial;
+
+    margin-left: 40rem;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/twitter_clone",
+  "description": "Twitter Clone",
+  "require": {
+    "php": ">= 7.0"
+  },
+  "authors": [
+    {
+      "name": "Gabriel Morishita",
+      "email": "gabrielmorishita23@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "backend\\": "backend/",
+      "MF\\": "vendor/MF/"
+    }
+  }
+}

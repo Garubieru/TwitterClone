@@ -1,0 +1,30 @@
+.page-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-success .card-success {
+  width: 100vw;
+
+  padding: 2rem;
+
+  max-width: 650px;
+
+  text-align: center;
+}
+
+.card-success h1,
+.card-success i {
+  color: var(--color-secondary-light);
+}
+
+.card-success h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-success i {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
