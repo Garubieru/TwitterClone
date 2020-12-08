@@ -6,10 +6,6 @@ Made with HTML5, CSS and PHP.
 
 ![Home Page](https://i.imgur.com/oMiRZTe.png)
 
-## HOME PAGE MOBILE
-
-![Home Page Mobile](https://i.imgur.com/pz2f3it.png)
-
 ## SUBSCRIBE
 
 ![Subscribe](https://i.imgur.com/ny2BKxj.png)
@@ -26,13 +22,17 @@ Made with HTML5, CSS and PHP.
 
 ![Explore](https://i.imgur.com/Nrbyk0H.png)
 
+## HOME PAGE MOBILE
+
+![Home Page Mobile](https://i.imgur.com/pz2f3it.png)
+
 ## TIMELINE MOBILE
 
-![Timeline Mobile](https://i.imgur.com/l1otHjW.png)
+![Timeline Mobile](https://i.imgur.com/IC1ehzr.png)
 
 ## EXPLORE MOBILE
 
-![Explore Mobile](https://i.imgur.com/IC1ehzr.png)
+![Explore Mobile](https://i.imgur.com/KcqsoXh.png)
 
 
 ## EXECUTANDO A APLICAÇÃO
